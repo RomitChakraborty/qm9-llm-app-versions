@@ -44,7 +44,7 @@ In this project, we have:
 2. **Install server dependencies**:
    ```bash
    cd server
-   pip install -r requirements.txt
+   pip3 install -r requirements.txt
    ```
    Make sure you have a `.env` file containing your `OPENAI_API_KEY`.
 
@@ -57,7 +57,7 @@ In this project, we have:
 4. **Run the server** (Flask):
    ```bash
    cd ../server
-   python server.py
+   python3 server.py
    ```
    By default, it listens at `http://127.0.0.1:8000`.
 
