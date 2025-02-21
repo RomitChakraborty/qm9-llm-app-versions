@@ -107,11 +107,5 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 ---
 
-## License
-
-This project is provided under the [MIT License](LICENSE). See the `LICENSE` file for more details.
-
----
-
 *For questions, please reach out or open an issue on GitHub. Have a nice day!!*
 ```
