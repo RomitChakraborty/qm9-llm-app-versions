@@ -106,6 +106,7 @@ Below are four sample queries that highlight different aspects of quantum chemic
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to modify. Please ensure any contributions align with open-source best practices and do not leak sensitive API credentials.
 
 ---
+[![GitHub Follow](https://img.shields.io/github/followers/RomitChakraborty?label=Follow&style=social)](https://github.com/RomitChakraborty)
 
 *For questions, please reach out or open an issue on GitHub. Have a nice day!!*
 ```
