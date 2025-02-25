@@ -1,6 +1,6 @@
 # QM9 Fine-Tuned LLM Demo
 
-A minimal full-stack web application showcasing a **fine-tuned GPT model** on the [QM9 dataset](https://doi.org/10.1021/ct400195j), designed to answer quantum chemical property queries. The application employs a **Flask** back end (Python) and a **React** front end (JavaScript), enabling real-time user interaction with a specialized Large Language Model trained on fundamental molecular properties such as dipole moments, HOMO/LUMO energies, and HOMO-LUMO gaps.
+A minimal full-stack web application showcasing a **fine-tuned GPT model** on the [QM9 dataset](https://doi.org/10.1021/ct400195j), designed to answer quantum chemical property queries. The application employs a **Flask** back end (Python) and a **React** front end (JavaScript), enabling real-time user interaction with a specialized Large Language Model trained on fundamental molecular properties such as dipole moments, HOMO/LUMO energies, and HOMO-LUMO gaps. This is intended as a demonstration of an application outline that can be repurposed for other tasks.
 
 ---
 
