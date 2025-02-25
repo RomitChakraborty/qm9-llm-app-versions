@@ -21,7 +21,8 @@ A minimal full-stack web application showcasing a **fine-tuned GPT model** on th
 In this project, we have:
 - **Fine-Tuned GPT** on a curated subset of the QM9 dataset, which consists of small organic molecules with data on HOMO/LUMO energies, dipole moments, etc.  
 - A **Flask** server that listens for user input (like “What is the dipole moment of H₂O?”) and relays these prompts to the fine-tuned GPT model.  
-- A **React** front end that provides a slick user interface, letting you type queries in a text box and see dynamic answers from the model.
+- A **React** front end that provides a simple and elegant user interface, letting you type queries in a text box and see dynamic answers from the model.
+- Extensions -- Add windows that visualize molecular and running commentary on ball and stick renderings, orbitals, densities, energies and dipole moments to give it an LLM/multimodal feel.
 
 ---
 
@@ -30,10 +31,11 @@ In this project, we have:
 - **Chemistry-Specific LLM**: Rather than a general-purpose model, this GPT variant is optimized for small organic molecules, bridging the gap between AI and quantum chemistry.
 - **Active-Space & Orbital Queries**: Users can request information about orbital energies, HOMO-LUMO gaps, or dipole moments.
 - **Full-Stack**: Demonstrates a production-like pipeline—React for UI, Flask for logic, and OpenAI’s service for the LLM.
+- **Minimal** since it serves the purpose of demonstrations.
 
 ---
 
-## Installation & Setup
+## Installation & Setup (Modify as Needed)
 
 1. **Clone this repo** and navigate into its directory:
    ```bash
@@ -75,6 +77,7 @@ In this project, we have:
 1. **Open your browser** to `http://localhost:3000`.
 2. **Type a molecule or question** in the text box (e.g. “What is the dipole moment of H₂O?”).
 3. **Submit**. The React app will call the Flask server, which queries the fine-tuned GPT model. The response will display under **“Model Reply.”**
+4. **Fine-tuned** LLM calls are made direcly from a pre-trained model. Recent evaluations suggest that GPT-4o may have already seen the QM9 dataset.
 
 ---
 
