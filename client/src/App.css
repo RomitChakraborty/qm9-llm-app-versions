@@ -128,3 +128,21 @@ hr {
   background-color: #444;
   margin: 40px 0;
 }
+
+/* Orbital Grid */
+.orbital-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.orbital-item img {
+  width: 100%;
+  border: 1px solid #444;
+  border-radius: 4px;
+}
+
+.orbital-item p {
+  margin-top: 5px;
+}
