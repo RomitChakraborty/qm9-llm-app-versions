@@ -9,10 +9,11 @@ A minimal full-stack web application showcasing a **fine-tuned GPT model** on th
 2. [Highlights](#highlights)  
 3. [Installation & Setup](#installation--setup)  
 4. [Usage](#usage)  
-5. [Screenshots](#screenshots)  
-6. [Technical Notes](#technical-notes)  
-7. [Contributing](#contributing)  
-8. [License](#license)
+5. [Orbital Visualization Workflow](#orbital-visualization-workflow)
+6. [Screenshots](#screenshots)  
+7. [Technical Notes](#technical-notes)  
+8. [Contributing](#contributing)  
+9. [License](#license)
 
 ---
 
@@ -45,27 +46,26 @@ In this project, we have:
 
 2. **Install server dependencies**:
    ```bash
-   cd server
    pip3 install -r requirements.txt
    ```
    Make sure you have a `.env` file containing your `OPENAI_API_KEY`.
 
 3. **Install front-end dependencies**:
    ```bash
-   cd ../client
+   cd client
    npm install
+   cd ..
    ```
 
 4. **Run the server** (Flask):
    ```bash
-   cd ../server
    python3 server.py
    ```
    By default, it listens at `http://127.0.0.1:8000`.
 
 5. **Run the React front end**:
    ```bash
-   cd ../client
+   cd client
    npm start
    ```
    The app will be served at `http://localhost:3000`.
@@ -74,10 +74,31 @@ In this project, we have:
 
 ## Usage
 
+
+
 1. **Open your browser** to `http://localhost:3000`.
 2. **Type a molecule or question** in the text box (e.g. “What is the dipole moment of H₂O?”).
 3. **Submit**. The React app will call the Flask server, which queries the fine-tuned GPT model. The response will display under **“Model Reply.”**
 4. **Fine-tuned** LLM calls are made direcly from a pre-trained model. Recent evaluations suggest that GPT-4o may have already seen the QM9 dataset.
+
+## Orbital Visualization Workflow
+
+This optional feature uses PySCF to compute Hartree--Fock orbitals and plot them whenever a molecule is submitted.
+
+1. Start the Flask server:
+```bash
+python3 server.py
+```
+2. In a new terminal, launch the React front end:
+```bash
+cd client
+npm start
+```
+3. Open `http://localhost:3000` and enter a molecule in PySCF format, e.g.:
+```
+H 0 0 0; F 0 0 1.1
+```
+4. Click **Submit to Model**. After SCF convergence, up to four orbital images appear under the model reply.
 
 ---
 
