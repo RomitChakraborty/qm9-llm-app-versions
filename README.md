@@ -43,9 +43,8 @@ In this project, we have:
    cd qm9-llm-app
    ```
 
-2. **Install server dependencies**:
+2. **Install server dependencies** (from the repository root):
    ```bash
-   cd server
    pip3 install -r requirements.txt
    ```
    Make sure you have a `.env` file containing your `OPENAI_API_KEY`.
