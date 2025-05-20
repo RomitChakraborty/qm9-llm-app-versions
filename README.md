@@ -76,7 +76,7 @@ In this project, we have:
 1. **Open your browser** to `http://localhost:3000`.
 2. **Type a molecule or question** in the text box (e.g. “What is the dipole moment of H₂O?”).
 3. **Submit**. The React app will call the Flask server, which queries the fine-tuned GPT model. The response will display under **“Model Reply.”**
-4. **Fine-tuned** LLM calls are made direcly from a pre-trained model. Recent evaluations suggest that GPT-4o may have already seen the QM9 dataset.
+4. **Fine-tuned** LLM calls are made directly from a pre-trained model. Recent evaluations suggest that GPT-4o may have already seen the QM9 dataset.
 
 ---
 
