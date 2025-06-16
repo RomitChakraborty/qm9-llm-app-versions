@@ -1,2 +1,2 @@
-# reversion required
+# reversioning under progress
 # under construction
